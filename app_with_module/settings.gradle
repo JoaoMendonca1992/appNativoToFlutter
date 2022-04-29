@@ -1,0 +1,8 @@
+include ':app'
+// Include the host app project.
+setBinding(new Binding([gradle: this]))                                // new
+evaluate(new File(                                                     // new
+        settingsDir.parentFile,                                              // new
+        'my_flutter/.android/include_flutter.groovy'                         // new
+))
+rootProject.name = "app_with_module"
