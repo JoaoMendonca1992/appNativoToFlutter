@@ -58,7 +58,7 @@ ModelTeste? modelTeste;
          ),
          Center(
            child: Text(
-            modelTeste != null ?  modelTeste.toString() : "nao deu",
+            modelTeste != null ?  modelTeste.toString() : "Erro ao receber dados",
              textAlign: TextAlign.center,
              style: TextStyle(
                fontSize: 12,

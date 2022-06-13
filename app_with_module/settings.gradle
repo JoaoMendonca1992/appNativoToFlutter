@@ -1,6 +1,7 @@
 include ':app'
 // Include the host app project.
 setBinding(new Binding([gradle: this]))                                // new
+//TODO: Import do modulo em flutter
 evaluate(new File(                                                     // new
         settingsDir.parentFile,                                              // new
         'module_flutter/.android/include_flutter.groovy'                         // new
